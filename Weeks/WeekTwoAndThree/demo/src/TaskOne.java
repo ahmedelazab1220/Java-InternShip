@@ -5,7 +5,7 @@ import java.util.StringTokenizer;
 
 public class TaskOne {
 
-    // Task 1 -> calculate First Occurrence of item in array if position less than 5 skip it
+    // Task 1 -> calculate First Occurrence of specific item in array if position less than 5 skip it
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -23,15 +23,16 @@ public class TaskOne {
             array[i] = Integer.parseInt(st.nextToken());
         }
 
-        Set<Integer> hash_set = new HashSet<>();
+        int number  = Integer.parseInt(br,readLine());
 
         for(int i=5;i < sizeOfArray;i++) {
-            if (hash_set.contains(array[i])) {
-                continue;
+            if (array[i] == number) {
+                bw.write("First Occurrence Of Item equal to - " + array[i] + " -- appear in this position - " + i);
+                break;
             }
-            hash_set.add(array[i]);
-            bw.write("First Occurrence Of Item equal to - " + array[i] + " -- appear in this position - " + i);
-            bw.newLine();
         }
+
+        br.close();
+        bw.close();
     }
 }
