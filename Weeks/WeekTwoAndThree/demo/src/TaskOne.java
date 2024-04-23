@@ -1,6 +1,4 @@
 import java.io.*;
-import java.util.HashSet;
-import java.util.Set;
 import java.util.StringTokenizer;
 
 public class TaskOne {
@@ -23,7 +21,7 @@ public class TaskOne {
             array[i] = Integer.parseInt(st.nextToken());
         }
 
-        int number  = Integer.parseInt(br,readLine());
+        int number  = Integer.parseInt(br.readLine());
 
         for(int i=5;i < sizeOfArray;i++) {
             if (array[i] == number) {

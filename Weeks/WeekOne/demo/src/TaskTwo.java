@@ -15,10 +15,10 @@ public class TaskTwo {
         long num1 = Long.parseLong(st.nextToken());
         long num2 = Long.parseLong(st.nextToken());
 
-        bw.write("sum of two numbers a and b equal to - " + Add(num1 , num2) + "\n");
-        bw.write("Subtract of two numbers a and b equal to - " + Subtract(num1 , num2) + "\n");
-        bw.write("Multiple of two numbers a and b equal to - " + Multiple(num1 , num2) + "\n");
-        bw.write("Division of two numbers a and b equal to - " + Division(num1 , num2) + "\n");
+        bw.write("sum of two numbers a and b equal to - " + add(num1 , num2) + "\n");
+        bw.write("Subtract of two numbers a and b equal to - " + subtract(num1 , num2) + "\n");
+        bw.write("Multiple of two numbers a and b equal to - " + multiple(num1 , num2) + "\n");
+        bw.write("Division of two numbers a and b equal to - " + division(num1 , num2) + "\n");
 
 
         br.close();
@@ -26,19 +26,19 @@ public class TaskTwo {
 
     }
 
-    public static long Add(long a, long b){
+    public static long add(long a, long b){
         return a + b;
     }
 
-    public static long Subtract(long a, long b){
+    public static long subtract(long a, long b){
         return a - b;
     }
 
-    public static long Multiple(long a, long b){
+    public static long multiple(long a, long b){
         return a * b;
     }
 
-    public static double Division(long a, long b){
+    public static double division(long a, long b){
         if(b == 0){
             return NaN;
         }

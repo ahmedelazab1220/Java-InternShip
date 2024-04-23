@@ -21,14 +21,14 @@ public class TaskTwo {
             array[i] = Integer.parseInt(st.nextToken());
         }
 
-        bw.write("average of an elements in array - " + Average(array));
+        bw.write("average of an elements in array - " + average(array));
 
         br.close();
         bw.close();
 
     }
 
-    public static double Average(int [] array){
+    public static double average(int [] array){
 
         long sum = 0;
         for (int j : array) {
