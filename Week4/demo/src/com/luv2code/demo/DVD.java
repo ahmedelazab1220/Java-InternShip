@@ -7,7 +7,7 @@ public class DVD extends Item {
     private int duration;
     private String language;
 
-    public DVD(String title, String author, LocalDate publication , int duration, String language) {
+    public DVD(String title, String author, LocalDate publication, int duration, String language) {
         super(title, author, publication, ItemType.DVD);
         this.duration = duration;
         this.language = language;

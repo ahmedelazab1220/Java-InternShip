@@ -1,6 +1,6 @@
 import java.io.*;
 
-public class TaskOne {
+public class Task1 {
 
     // Task 1 -> use data types to declare variable
     public static void main(String[] args) throws IOException {

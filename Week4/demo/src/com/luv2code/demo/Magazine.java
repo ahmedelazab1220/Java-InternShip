@@ -2,12 +2,12 @@ package com.luv2code.demo;
 
 import java.time.LocalDate;
 
-public class Magazine extends Item{
+public class Magazine extends Item {
 
     private int issueNumber;
 
-    public Magazine(String title, String author, LocalDate publication , int issueNumber) {
-        super(title, author, publication , ItemType.MAGAZINE);
+    public Magazine(String title, String author, LocalDate publication, int issueNumber) {
+        super(title, author, publication, ItemType.MAGAZINE);
         this.issueNumber = issueNumber;
     }
 

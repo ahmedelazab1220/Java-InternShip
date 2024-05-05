@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.StringTokenizer;
 
-public class TaskTwo {
+public class Task2 {
 
     // Task 2 -> calculate average of an array
     public static void main(String[] args) throws IOException {
@@ -13,11 +13,11 @@ public class TaskTwo {
         // Task 1 -> calculate First Occurrence of item in array
         int sizeOfArray = Integer.parseInt(br.readLine());
 
-        int [] array = new int [sizeOfArray];
+        int[] array = new int[sizeOfArray];
 
-        st =  new StringTokenizer(br.readLine());
+        st = new StringTokenizer(br.readLine());
 
-        for(int i=0;i < sizeOfArray;i++){
+        for (int i = 0; i < sizeOfArray; i++) {
             array[i] = Integer.parseInt(st.nextToken());
         }
 
@@ -28,7 +28,7 @@ public class TaskTwo {
 
     }
 
-    public static double average(int [] array){
+    public static double average(int[] array) {
 
         long sum = 0;
         for (int j : array) {

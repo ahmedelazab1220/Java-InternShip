@@ -34,6 +34,7 @@ public class Task2 {
     private static boolean isNumeric(String str) {
         return str != null && str.matches("-?\\d+(\\.\\d+)?");
     }
+
     private static void closeResources() {
         try {
             if (br != null) br.close();
